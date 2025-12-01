@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Summary: pH Drift</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #222; }
+        h1 { color: #2c3e50; }
+        .meta { color: #777; font-size: 0.9rem; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        h3 { color: #3498db; margin-top: 25px; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .data-table th, .data-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .data-table th { background-color: #f8f9fa; }
+        a { text-decoration: none; color: #3498db; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Portfolio</a>
+
+    <h1>Investigation of pH Sensor Drift in Industrial Effluents</h1>
+    <div class="meta">
+        <strong>Date:</strong> Oct 2024 | <strong>Category:</strong> Environmental Metrology | <strong>Author:</strong> Your Name
+    </div>
+
+    <h3>1. Abstract</h3>
+    <p>This study analyzes the stability of industrial pH probes exposed to acidic effluents over a 180-day period. The objective was to determine the optimal calibration interval to maintain ISO 17025 compliance.</p>
+
+    <h3>2. Methodology</h3>
+    <p>Three sensors (Brand A) were subjected to daily cycles of pH 4.0 and pH 10.0 buffers. Drift was recorded weekly against a primary standard reference material.</p>
+
+    <h3>3. Key Results</h3>
+    <p>The data indicates a linear drift pattern after Day 45.</p>
+    
+    <table class="data-table">
+        <tr>
+            <th>Time (Days)</th>
+            <th>Avg Drift (pH units)</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>0.02</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>0.08</td>
+            <td>Warning</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>0.15</td>
+            <td>Fail (>0.10)</td>
+        </tr>
+    </table>
+
+    <h3>4. Conclusion</h3>
+    <p>To maintain uncertainty limits within ±0.05 pH, the calibration interval must be reduced from 90 days to 45 days. A new maintenance protocol has been proposed.</p>
+
+</body>
+</html>
