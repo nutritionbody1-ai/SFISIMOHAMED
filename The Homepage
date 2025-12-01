@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* MAIN STYLES */
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f8f9fa; }
+        body { font-family: 'Roboto', sans-serif; background: var(--bg); margin: 0; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        
+        /* HEADER */
+        header { background: white; padding: 3rem 1rem; text-align: center; border-bottom: 1px solid #ddd; }
+        h1 { margin: 0; color: var(--primary); }
+        .subtitle { color: #666; font-style: italic; margin-top: 10px; }
+        
+        /* CARDS */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 2rem; }
+        .card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #eee; transition: 0.2s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: var(--accent); }
+        .tag { background: #e3f2fd; color: var(--accent); padding: 4px 8px; font-size: 0.75rem; border-radius: 4px; font-weight: bold; }
+        h3 { margin: 15px 0 10px; color: var(--primary); }
+        p { font-size: 0.9rem; color: #555; line-height: 1.5; }
+        
+        /* BUTTONS */
+        .btn { display: inline-block; background: var(--accent); color: white; text-decoration: none; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem; margin-top: 10px; }
+        .btn:hover { background: #217dbb; }
+        .section-title { margin-top: 3rem; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; color: var(--primary); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p class="subtitle">Metrology | Quality Control | Environmental Analysis</p>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">Scientific Tools</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">WEB APP</span>
+            <h3>ISO GUM Uncertainty Calculator</h3>
+            <p>A fully functional web tool to calculate combined standard uncertainty from Type A and Type B sources.</p>
+            <a href="calculator.html" class="btn">Launch Tool 🚀</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">Technical Notes</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">TUTORIAL</span>
+            <h3>Guide to Measurement Uncertainty</h3>
+            <p>A structured breakdown of the 5-step GUM method, including equations for sensitivity coefficients.</p>
+            <a href="guide_gum.html" class="btn">Read Guide</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">Research Reports</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="tag">CASE STUDY</span>
+            <h3>pH Meter Drift Analysis</h3>
+            <p>Investigation into sensor degradation over 6 months using linear regression models.</p>
+            <a href="research_summary.html" class="btn">View Summary</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
