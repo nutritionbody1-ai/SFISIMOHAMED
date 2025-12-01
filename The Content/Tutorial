@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide to Measurement Uncertainty</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #333; }
+        h1 { font-family: sans-serif; color: #2c3e50; }
+        h2 { font-family: sans-serif; color: #3498db; margin-top: 30px; }
+        .box { background: #f4f4f4; padding: 15px; border-left: 4px solid #3498db; font-style: italic; }
+        a { text-decoration: none; color: #3498db; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Portfolio</a>
+    
+    <h1>Calculating Measurement Uncertainty: The GUM Method</h1>
+    <p><strong>Topic:</strong> Metrology & Quality | <strong>Standard:</strong> ISO/IEC Guide 98-3</p>
+    <hr>
+
+    <p>In metrology, a measurement is not complete without a statement of uncertainty. This guide summarizes the standard framework.</p>
+
+    <h2>1. The Model Equation</h2>
+    <p>The measurand \( Y \) is determined from \( N \) input quantities \( X_1, X_2, ..., X_N \) through a functional relationship:</p>
+    $$ Y = f(X_1, X_2, ..., X_N) $$
+
+    <h2>2. Law of Propagation of Uncertainty</h2>
+    <p>The combined standard uncertainty \( u_c(y) \) is the positive square root of the combined variance:</p>
+    
+    $$ u_c^2(y) = \sum_{i=1}^{N} \left( \frac{\partial f}{\partial x_i} \right)^2 u^2(x_i) $$
+    
+    <div class="box">
+        <strong>Key Concept:</strong> The term \( \frac{\partial f}{\partial x_i} \) is the sensitivity coefficient. It describes how much the output \( y \) changes when the input \( x_i \) changes.
+    </div>
+
+    <h2>3. Reporting the Result</h2>
+    <p>The final result is reported as an Expanded Uncertainty \( U \), typically using a coverage factor \( k=2 \) (giving a level of confidence of approximately 95%).</p>
+    $$ U = k \times u_c(y) $$
+
+</body>
+</html>
